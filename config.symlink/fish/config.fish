@@ -1,4 +1,7 @@
-fish_add_path /opt/homebrew/bin /opt/homebrew/sbin "$HOME/.home/bin" /usr/local/bin /usr/bin /bin /usr/sbin /sbin /opt /usr/local/sbin "$HOME/.cargo/bin"
+set -Ux ANDROID_HOME $HOME/Library/Android/sdk
+set -Ux JAVA_HOME /Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home
+set -Ux PNPM_HOME $HOME/Library/pnpm
+set -gx PATH /opt/homebrew/bin /opt/homebrew/sbin $HOME/.home/bin $PNPM_HOME /usr/local/bin /usr/bin /bin /usr/sbin /sbin /opt /usr/local/sbin $HOME/.cargo/bin $ANDROID_HOME/emulator $ANDROID_HOME/platform-tools $HOME/.bun/bin $PATH
 set -Ux EDITOR vim
 source ~/.iterm2_shell_integration.fish
 
@@ -20,6 +23,9 @@ abbr --add c 'code .'
 abbr --add map 'xargs -n1'
 abbr --add nsize 'du -sh ./node_modules/* | sort -nr | grep "\dM.*"'
 abbr --add p 'pnpm'
+abbr --add ghpr 'gh pr checkout'
+abbr --add qgit 'git'
+abbr --add qpnpm 'pnpm'
 
 set fish_color_cwd '3d87f5'
 set fish_color_search_match --background='C2E8FF'

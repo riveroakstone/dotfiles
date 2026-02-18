@@ -73,3 +73,7 @@
   colorMoved = default
 [add.interactive]
   useBuiltin = false
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true

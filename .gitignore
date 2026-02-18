@@ -1,10 +1,23 @@
+Brewfile.lock.json
 config.symlink/configstore/
 config.symlink/fish/fishd.*
-config.symlink/grammarly-languageserver/*/com.grammarly.plugin.refresh_token
+config.symlink/fish/functions/ac-proxy.fish
+config.symlink/fish/functions/rl-proxy.fish
+config.symlink/gh/hosts.yml
+config.symlink/grammarly-languageserver/*/com.grammarly.plugin.refresh_token*
+config.symlink/grammarly-languageserver/*/com.grammarly.plugin.gnarContainerId
+config.symlink/graphite/user_config
+config.symlink/iterm2/AppSupport
+config.symlink/mole/
+config.symlink/op/
+config.symlink/pudb
+config.symlink/rclone
 config.symlink/simple-update-notifier/
+config.symlink/stripe
 config.symlink/yarn
 sublime3/User/Package\ Control.cache
 sublime3/User/Package\ Control.last-run
 vscode/User/globalStorage
 vscode/User/History/
+vscode/User/mcp.json
 vscode/User/workspaceStorage

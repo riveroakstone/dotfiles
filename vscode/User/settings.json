@@ -23,48 +23,45 @@
   "files.trimFinalNewlines": true,
   "github.copilot.enable": {
     "*": true,
-    "yaml": true,
-    "plaintext": true,
-    "markdown": true
+    "markdown": false,
+    "mdx": false
   },
   "gitlens.codeLens.enabled": false,
   "javascript.validate.enable": false,
   "telemetry.telemetryLevel": "off",
   "workbench.editor.enablePreview": false,
-  "workbench.editor.untitled.hint": "hidden",
+  "workbench.tree.enableStickyScroll": true,
   "workbench.startupEditor": "newUntitledFile",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.oxc": "explicit"
+  },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode"
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode"
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode"
   },
-  "diffEditor.ignoreTrimWhitespace": false,
   "editor.minimap.enabled": false,
   "editor.accessibilitySupport": "off",
   "window.autoDetectColorScheme": true,
   "workbench.preferredLightColorTheme": "Licht Theme",
   "workbench.preferredDarkColorTheme": "Dunkel Theme",
-  "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Licht Theme",
-  "livePreview.autoRefreshPreview": "Never",
   "[mdx]": {
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "editor.defaultFormatter": "oxc.oxc-vscode"
   },
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode"
   },
   "gremlins.characters": {
     "2013": {
@@ -152,23 +149,49 @@
     "eslint(no-console)",
     "eslint(no-empty-pattern)",
     "eslint(no-empty)",
+    "eslint(prefer-const)",
     "eslint(semi)",
+    "Grammarly",
+    "jsonc(519)",
     "ts(6133)",
-    "Grammarly"
   ],
-  "errorLens.exclude": ["^Correct your spelling$", "^Change the spelling$"],
-  "workbench.layoutControl.enabled": false,
-  "prettier.singleQuote": true,
-  "mdx.experimentalLanguageServer": true,
   "editor.stickyScroll.enabled": true,
   "editor.cursorBlinking": "phase",
   "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "files.autoSaveDelay": 50,
+  "files.autoSaveDelay": 30,
   "gitlens.showWhatsNewAfterUpgrades": false,
-  "gitlens.showWelcomeOnInstall": false,
   "gitlens.plusFeatures.enabled": false,
   "github.copilot.editor.enableCodeActions": false,
   "typescript.reportStyleChecksAsWarnings": false,
-  "files.autoSave": "afterDelay"
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.activityBar.location": "hidden",
+  "files.autoSave": "afterDelay",
+  "workbench.layoutControl.enabled": false,
+  "openInGitHub.defaultBranch": "main",
+  "openInGitHub.alwaysUseDefaultBranch": true,
+  "window.confirmSaveUntitledWorkspace": false,
+  "github.copilot.selectedCompletionModel": "",
+  "git.openRepositoryInParentFolders": "never",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.svg": "default"
+  },
+  "diffEditor.ignoreTrimWhitespace": true,
+  "chat.tools.terminal.autoApprove": {
+    "pnpm": true
+  },
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "gitlens.blame.ignoreWhitespace": true,
+  "typescript.experimental.useTsgo": true,
+  "editor.inlineSuggest.edits.allowCodeShifting": "never",
+  "tailwindCSS.lint.suggestCanonicalClasses": "ignore",
+  "oxc.enable.oxfmt": true,
+  "[jsonc]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
 }
